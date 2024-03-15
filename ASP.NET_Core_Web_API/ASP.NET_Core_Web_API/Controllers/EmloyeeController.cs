@@ -1,10 +1,12 @@
 ﻿using ASP.NET_Core_Web_API.DAL;
 using ASP.NET_Core_Web_API.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ASP.NET_Core_Web_API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class EmloyeeController : ControllerBase
